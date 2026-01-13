@@ -1,0 +1,95 @@
+backend:
+  name: github
+  repo: lkkchung/lightwork
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home Page"
+        file: "content.json"
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Title (Italic Part)", name: "title_italic", widget: "string", default: "This is"}
+              - {label: "Title (Regular Part)", name: "title_regular", widget: "string", default: "Light Work"}
+              - {label: "Intro Text", name: "intro", widget: "text"}
+
+          - label: "Approach Section"
+            name: "approach"
+            widget: "object"
+            fields:
+              - {label: "Content", name: "content", widget: "text"}
+
+          - label: "Process Section"
+            name: "process"
+            widget: "object"
+            fields:
+              - {label: "Main Text", name: "main_text", widget: "text"}
+              - {label: "Engagement Models (bulleted list)", name: "engagement_models", widget: "list"}
+              - {label: "Closing Text", name: "closing_text", widget: "text"}
+              - label: "Discovery Work"
+                name: "discovery"
+                widget: "object"
+                fields:
+                  - {label: "Content", name: "content", widget: "text"}
+              - label: "Results"
+                name: "results"
+                widget: "object"
+                fields:
+                  - {label: "Content", name: "content", widget: "text"}
+              - label: "Engagement Models Detail"
+                name: "engagement_detail"
+                widget: "object"
+                fields:
+                  - {label: "Content", name: "content", widget: "text"}
+
+          - label: "Accessibility Section"
+            name: "accessibility"
+            widget: "object"
+            fields:
+              - {label: "Content", name: "content", widget: "text"}
+
+          - label: "Connect Section"
+            name: "connect"
+            widget: "object"
+            fields:
+              - {label: "Text", name: "text", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Button Text", name: "button_text", widget: "string", default: "Connect with me!"}
+
+          - label: "About - My Story"
+            name: "my_story"
+            widget: "object"
+            fields:
+              - {label: "Paragraph 1", name: "para1", widget: "text"}
+              - {label: "Paragraph 2", name: "para2", widget: "text"}
+              - {label: "Paragraph 3", name: "para3", widget: "text"}
+
+          - label: "About - Working Style"
+            name: "working_style"
+            widget: "object"
+            fields:
+              - {label: "Content", name: "content", widget: "text"}
+
+          - label: "Tagline Section"
+            name: "tagline"
+            widget: "object"
+            fields:
+              - {label: "Tagline", name: "text", widget: "string", default: "Come to us cloudy"}
+              - {label: "Description", name: "description", widget: "text"}
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - {label: "LinkedIn URL", name: "linkedin", widget: "string"}
+              - {label: "Instagram URL", name: "instagram", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}

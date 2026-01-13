@@ -282,7 +282,7 @@
 
         <h2>Work with me</h2>
 
-        <div class="section">
+        <div class="section" data-section="approach">
             <div class="section-content">
                 <h3 class="section-label">Approach</h3>
                 <div class="section-text">
@@ -291,42 +291,42 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section" data-section="process">
             <div class="section-content">
                 <h3 class="section-label">Process</h3>
                 <div class="section-text">
-                    <p>I begin with discovery—part spitballing, part research, part conversation. The work begins immediately, with project design emerging as we unlock insights. Within days, we're boots on the ground together, capturing notes that will inform the next several years of your strategy.</p>
-                    
+                    <p data-field="main_text">I begin with discovery—part spitballing, part research, part conversation. The work begins immediately, with project design emerging as we unlock insights. Within days, we're boots on the ground together, capturing notes that will inform the next several years of your strategy.</p>
+
                     <p style="margin-top: 16px;"><strong>Engagement Models Include:</strong></p>
-                    <ul>
+                    <ul data-field="engagement_models">
                         <li>One-time deep-dive project</li>
                         <li>Incubator design or monthly embedded model</li>
                         <li>Biostanced advisory guidance</li>
                         <li>Organizational or story audit</li>
                         <li>Fractional co-founder/leadership embed</li>
                     </ul>
-                    
-                    <p style="margin-top: 16px;">Bring your questions and your experiences, and we will go together, far, & fast.</p>
-                    
+
+                    <p style="margin-top: 16px;" data-field="closing_text">Bring your questions and your experiences, and we will go together, far, & fast.</p>
+
                     <div class="subsection">
                         <div class="subsection-title">Discovery Work</div>
-                        <p>I map history, current state, vision ahead. Together we develop and clarify the heart of what you're building and the core narrative that should anchor our work.</p>
+                        <p data-field="discovery">I map history, current state, vision ahead. Together we develop and clarify the heart of what you're building and the core narrative that should anchor our work.</p>
                     </div>
-                    
+
                     <div class="subsection">
                         <div class="subsection-title">Results</div>
-                        <p>Incisive recommendations. Identity & historical clarity. KPI development & data story. Blue sky ideas. Strategy roadmapping. Story essence & voice scripting. Often: discovery of secondary work (process, org design, culture, thought leadership).</p>
+                        <p data-field="results">Incisive recommendations. Identity & historical clarity. KPI development & data story. Blue sky ideas. Strategy roadmapping. Story essence & voice scripting. Often: discovery of secondary work (process, org design, culture, thought leadership).</p>
                     </div>
-                    
+
                     <div class="subsection">
                         <div class="subsection-title">Engagement Models</div>
-                        <p>Coaching. Advisory. Embedded partnership. Insight & launch incubator. Campaign direction.</p>
+                        <p data-field="engagement_detail">Coaching. Advisory. Embedded partnership. Insight & launch incubator. Campaign direction.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="section">
+        <div class="section" data-section="accessibility">
             <div class="section-content">
                 <h3 class="section-label">Accessibility</h3>
                 <div class="section-text">
@@ -335,7 +335,7 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section" data-section="connect">
             <div class="section-content">
                 <h3 class="section-label">Connect</h3>
                 <div class="section-text">
@@ -348,20 +348,20 @@
 
         <h2>About</h2>
 
-        <div class="section">
+        <div class="section" data-section="my_story">
             <div class="section-content">
                 <h3 class="section-label">My Story</h3>
                 <div class="section-text">
-                    <p>I've spent my career helping organizations navigate periods of significant change. As the founder of Light Work, I bring a unique combination of strategic vision and intuitive understanding to help leaders see the unseen dynamics within their organizations.</p>
-                    
-                    <p style="margin-top: 16px;">My background spans operational leadership, strategic advising, and organizational design, all informed by my ongoing creative practice and interest in how systems evolve and adapt.</p>
-                    
-                    <p style="margin-top: 16px;">I believe the most valuable insights often emerge from the spaces between conventional metrics—the human dynamics, cultural nuances, and unspoken patterns that shape how organizations function.</p>
+                    <p data-field="para1">I've spent my career helping organizations navigate periods of significant change. As the founder of Light Work, I bring a unique combination of strategic vision and intuitive understanding to help leaders see the unseen dynamics within their organizations.</p>
+
+                    <p style="margin-top: 16px;" data-field="para2">My background spans operational leadership, strategic advising, and organizational design, all informed by my ongoing creative practice and interest in how systems evolve and adapt.</p>
+
+                    <p style="margin-top: 16px;" data-field="para3">I believe the most valuable insights often emerge from the spaces between conventional metrics—the human dynamics, cultural nuances, and unspoken patterns that shape how organizations function.</p>
                 </div>
             </div>
         </div>
 
-        <div class="section">
+        <div class="section" data-section="working_style">
             <div class="section-content">
                 <h3 class="section-label">Working Style</h3>
                 <div class="section-text">
@@ -399,5 +399,60 @@
         
         <div class="footer-brand">This is Light Work</div>
     </footer>
+
+    <script>
+        // Load content from content.json
+        fetch('content.json')
+            .then(response => response.json())
+            .then(content => {
+                // Hero section
+                document.querySelector('h1 .italic').textContent = content.hero.title_italic;
+                document.querySelector('h1').childNodes[1].textContent = ' ' + content.hero.title_regular;
+                document.querySelector('.intro').textContent = content.hero.intro;
+
+                // Approach section
+                document.querySelector('[data-section="approach"] .section-text').textContent = content.approach.content;
+
+                // Process section
+                const processSection = document.querySelector('[data-section="process"] .section-text');
+                processSection.querySelector('[data-field="main_text"]').textContent = content.process.main_text;
+
+                const engagementList = processSection.querySelector('[data-field="engagement_models"]');
+                engagementList.innerHTML = content.process.engagement_models.map(item => `<li>${item}</li>`).join('');
+
+                processSection.querySelector('[data-field="closing_text"]').textContent = content.process.closing_text;
+                processSection.querySelector('[data-field="discovery"]').textContent = content.process.discovery.content;
+                processSection.querySelector('[data-field="results"]').textContent = content.process.results.content;
+                processSection.querySelector('[data-field="engagement_detail"]').textContent = content.process.engagement_detail.content;
+
+                // Accessibility section
+                document.querySelector('[data-section="accessibility"] .section-text').textContent = content.accessibility.content;
+
+                // Connect section
+                const connectSection = document.querySelector('[data-section="connect"] .section-text');
+                connectSection.childNodes[0].textContent = content.connect.text;
+                connectSection.querySelector('a').href = `mailto:${content.connect.email}`;
+                connectSection.querySelector('a').textContent = content.connect.button_text;
+
+                // My Story section
+                const myStorySection = document.querySelector('[data-section="my_story"] .section-text');
+                myStorySection.querySelector('[data-field="para1"]').textContent = content.my_story.para1;
+                myStorySection.querySelector('[data-field="para2"]').textContent = content.my_story.para2;
+                myStorySection.querySelector('[data-field="para3"]').textContent = content.my_story.para3;
+
+                // Working Style section
+                document.querySelector('[data-section="working_style"] .section-text').textContent = content.working_style.content;
+
+                // Tagline section
+                document.querySelector('.tagline').textContent = content.tagline.text;
+                document.querySelector('.tagline-text').textContent = content.tagline.description;
+
+                // Footer
+                document.querySelector('footer a[href*="linkedin"]').href = content.footer.linkedin;
+                document.querySelector('footer a[href*="instagram"]').href = content.footer.instagram;
+                document.querySelector('footer a[href^="mailto"]').href = `mailto:${content.footer.email}`;
+            })
+            .catch(error => console.error('Error loading content:', error));
+    </script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "title_italic": "This is",
+    "title_regular": "Light Work",
+    "intro": "At Light Work, I help leaders navigate complex transitions and growth, clarify organizational challenges and core story, and identify unseen opportunities. My intuitive approach combines strategic insight with operational expertise to create clarity where it's needed most"
+  },
+  "approach": {
+    "content": "I work at the intersection of intuition and analysis, bringing both data-driven thinking and perceptive narrative insight to help organizations move and evolve with boldness and clarity."
+  },
+  "process": {
+    "main_text": "I begin with discovery—part spitballing, part research, part conversation. The work begins immediately, with project design emerging as we unlock insights. Within days, we're boots on the ground together, capturing notes that will inform the next several years of your strategy.",
+    "engagement_models": [
+      "One-time deep-dive project",
+      "Incubator design or monthly embedded model",
+      "Biostanced advisory guidance",
+      "Organizational or story audit",
+      "Fractional co-founder/leadership embed"
+    ],
+    "closing_text": "Bring your questions and your experiences, and we will go together, far, & fast.",
+    "discovery": {
+      "content": "I map history, current state, vision ahead. Together we develop and clarify the heart of what you're building and the core narrative that should anchor our work."
+    },
+    "results": {
+      "content": "Incisive recommendations. Identity & historical clarity. KPI development & data story. Blue sky ideas. Strategy roadmapping. Story essence & voice scripting. Often: discovery of secondary work (process, org design, culture, thought leadership)."
+    },
+    "engagement_detail": {
+      "content": "Coaching. Advisory. Embedded partnership. Insight & launch incubator. Campaign direction."
+    }
+  },
+  "accessibility": {
+    "content": "I believe good counsel should be available to those doing important work. That's why I reserve space each quarter for select sliding scale and scholarship engagements."
+  },
+  "connect": {
+    "text": "Currently booking engagements through 2027.",
+    "email": "haley@thisislight.work",
+    "button_text": "Connect with me!"
+  },
+  "my_story": {
+    "para1": "I've spent my career helping organizations navigate periods of significant change. As the founder of Light Work, I bring a unique combination of strategic vision and intuitive understanding to help leaders see the unseen dynamics within their organizations.",
+    "para2": "My background spans operational leadership, strategic advising, and organizational design, all informed by my ongoing creative practice and interest in how systems evolve and adapt.",
+    "para3": "I believe the most valuable insights often emerge from the spaces between conventional metrics—the human dynamics, cultural nuances, and unspoken patterns that shape how organizations function."
+  },
+  "working_style": {
+    "content": "I serve as a trusted advisor rather than a traditional consultant. My engagements are designed to be high-impact, focused, and tailored to your specific context. I limit my client roster to ensure deep engagement and availability for each partnership."
+  },
+  "tagline": {
+    "text": "Come to us cloudy",
+    "description": "Our favorite projects & collaborators are often in foggy conditions with talented, ambitious leaders and could use a mirror, divining rod or a compass tune-up."
+  },
+  "footer": {
+    "linkedin": "https://www.linkedin.com/in/haleymhoffman/",
+    "instagram": "https://www.instagram.com/haleymchung/",
+    "email": "haley@thisislight.work"
+  }
+}

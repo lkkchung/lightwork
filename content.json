@@ -1,55 +1,194 @@
 {
-  "hero": {
-    "title_italic": "This is",
-    "title_regular": "Light Work",
-    "intro": "At Light Work, I help leaders navigate complex transitions and growth, clarify organizational challenges and core story, and identify unseen opportunities. My intuitive approach combines strategic insight with operational expertise to create clarity where it's needed most"
-  },
-  "approach": {
-    "content": "I work at the intersection of intuition and analysis, bringing both data-driven thinking and perceptive narrative insight to help organizations move and evolve with boldness and clarity."
-  },
-  "process": {
-    "main_text": "I begin with discovery—part spitballing, part research, part conversation. The work begins immediately, with project design emerging as we unlock insights. Within days, we're boots on the ground together, capturing notes that will inform the next several years of your strategy.",
-    "engagement_models": [
-      "One-time deep-dive project",
-      "Incubator design or monthly embedded model",
-      "Biostanced advisory guidance",
-      "Organizational or story audit",
-      "Fractional co-founder/leadership embed"
-    ],
-    "closing_text": "Bring your questions and your experiences, and we will go together, far, & fast.",
-    "discovery": {
-      "content": "I map history, current state, vision ahead. Together we develop and clarify the heart of what you're building and the core narrative that should anchor our work."
-    },
-    "results": {
-      "content": "Incisive recommendations. Identity & historical clarity. KPI development & data story. Blue sky ideas. Strategy roadmapping. Story essence & voice scripting. Often: discovery of secondary work (process, org design, culture, thought leadership)."
-    },
-    "engagement_detail": {
-      "content": "Coaching. Advisory. Embedded partnership. Insight & launch incubator. Campaign direction."
+  "global": {
+    "site_name": "Light Work",
+    "email": "haley@thisislight.work",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/haleymhoffman/",
+      "instagram": "https://www.instagram.com/haleymchung/"
     }
   },
-  "accessibility": {
-    "content": "I believe good counsel should be available to those doing important work. That's why I reserve space each quarter for select sliding scale and scholarship engagements."
+  "home": {
+    "hero": {
+      "title": "LIGHT WORK",
+      "subtitle": "Strategic advisory for people building into the unknown.",
+      "intro": "I help leaders navigate transitions, clarify what matters, and translate vision into action.",
+      "cta_text": "Book an intro chat",
+      "cta_link": "/contact.html"
+    },
+    "audience": {
+      "heading": "I work with founders, executives, and creators who are:",
+      "items": [
+        "Building something that doesn't exist yet",
+        "Navigating major transitions",
+        "Figuring out what's next",
+        "Leading teams through complexity"
+      ],
+      "context": "You might be post-exit, post-pivot, or pulling something new into existence. The traditional path doesn't quite fit what you're building."
+    },
+    "come_cloudy": {
+      "title": "Come cloudy.",
+      "description": "The most fertile minds get cloudy—that's where ideas gestate, where something new is forming. Our favorite collaborators are talented, ambitious leaders in foggy conditions who could use a mirror, divining rod, or compass tune-up—the perfect name for your next solid step forward. We illuminate the unseen. We help you see patterns you can't see from inside, surface what's implicit, translate murky vision into clarity. Leave light-footed."
+    },
+    "modes": {
+      "heading": "Three Modes of Working",
+      "items": [
+        {
+          "name": "Individual",
+          "description": "Strategic partnership for founders, leaders, and creators navigating transitions or building something new.",
+          "link": "/offerings/individual.html"
+        },
+        {
+          "name": "Enterprise",
+          "description": "For organizations and executive teams. Discovery, narrative architecture, and strategic counsel for navigating complexity.",
+          "link": "/offerings/enterprise.html"
+        },
+        {
+          "name": "Special Projects",
+          "description": "Bespoke co-creation for anyone building something major. Campaign direction, launch strategy, creative ventures.",
+          "link": "/offerings/special-projects.html"
+        }
+      ]
+    },
+    "about_preview": {
+      "photo": "",
+      "name": "Haley Hoffman",
+      "bio": "I've spent 15+ years helping people and organizations navigate significant change. My background spans product strategy (TED.com 2.0 redesign), management consulting (Incandescent, including White House facilitation), and strategic advisory with founders, leaders, and enterprises. I work at the intersection of intuition and analysis. My ongoing creative practice informs how I approach strategic challenges—I help you see familiar problems from new angles and identify solutions that emerge from understanding rather than forcing.",
+      "link_text": "More about me",
+      "link": "/about.html"
+    }
   },
-  "connect": {
-    "text": "Currently booking engagements through 2027.",
-    "email": "haley@thisislight.work",
-    "button_text": "Connect with me!"
+  "about": {
+    "hero": {
+      "title": "About",
+      "subtitle": ""
+    },
+    "my_story": {
+      "title": "My Story",
+      "paragraphs": [
+        "I've spent my career helping organizations navigate periods of significant change. As the founder of Light Work, I bring a unique combination of strategic vision and intuitive understanding to help leaders see the unseen dynamics within their organizations.",
+        "My background spans operational leadership, strategic advising, and organizational design, all informed by my ongoing creative practice and interest in how systems evolve and adapt.",
+        "I believe the most valuable insights often emerge from the spaces between conventional metrics—the human dynamics, cultural nuances, and unspoken patterns that shape how organizations function."
+      ]
+    },
+    "how_i_work": {
+      "title": "How I Work",
+      "content": "I serve as a trusted advisor rather than a traditional consultant. My engagements are designed to be high-impact, focused, and tailored to your specific context. I limit my client roster to ensure deep engagement and availability for each partnership."
+    },
+    "beloveds": {
+      "title": "Beloveds",
+      "intro": "Content, ideas, and people I love and recommend.",
+      "links": [
+        {
+          "title": "Example Article",
+          "description": "Placeholder for curated content",
+          "url": "#",
+          "category": "Articles"
+        },
+        {
+          "title": "Example Book",
+          "description": "Placeholder for recommended reading",
+          "url": "#",
+          "category": "Books"
+        }
+      ]
+    }
   },
-  "my_story": {
-    "para1": "I've spent my career helping organizations navigate periods of significant change. As the founder of Light Work, I bring a unique combination of strategic vision and intuitive understanding to help leaders see the unseen dynamics within their organizations.",
-    "para2": "My background spans operational leadership, strategic advising, and organizational design, all informed by my ongoing creative practice and interest in how systems evolve and adapt.",
-    "para3": "I believe the most valuable insights often emerge from the spaces between conventional metrics—the human dynamics, cultural nuances, and unspoken patterns that shape how organizations function."
+  "offerings_individual": {
+    "hero": {
+      "title": "Personal Advisory",
+      "subtitle": "Strategic partnership for leaders navigating transitions"
+    },
+    "intro": "For founders, executives, and creators who are building something new, navigating a major transition, or figuring out what's next.",
+    "engagement_types": [
+      {
+        "name": "Sessions Bundle",
+        "description": "Focused strategic sessions for specific challenges or decisions."
+      },
+      {
+        "name": "Consigliere",
+        "description": "Ongoing advisory partnership for sustained strategic guidance."
+      },
+      {
+        "name": "Incubator",
+        "description": "Intensive co-creation for major launches or pivots."
+      }
+    ],
+    "process": {
+      "title": "How We Work",
+      "description": "I begin with discovery—part spitballing, part research, part conversation. The work begins immediately, with project design emerging as we unlock insights. Within days, we're boots on the ground together, capturing notes that will inform the next several years of your strategy."
+    },
+    "accessibility": {
+      "content": "I believe good counsel should be available to those doing important work. That's why I reserve space each quarter for select sliding scale and scholarship engagements."
+    }
   },
-  "working_style": {
-    "content": "I serve as a trusted advisor rather than a traditional consultant. My engagements are designed to be high-impact, focused, and tailored to your specific context. I limit my client roster to ensure deep engagement and availability for each partnership."
+  "offerings_enterprise": {
+    "hero": {
+      "title": "Executive & Enterprise Strategy",
+      "subtitle": "Discovery, narrative architecture, and strategic counsel for organizations"
+    },
+    "intro": "For institutional leaders and organizations navigating complexity, transformation, and strategic inflection points.",
+    "engagement_types": [
+      {
+        "name": "Consigliere",
+        "description": "Executive advisory and strategic counsel at the highest levels."
+      },
+      {
+        "name": "Embedded Partnership",
+        "description": "Deep integration with your team for sustained transformation."
+      },
+      {
+        "name": "Incubator",
+        "description": "Intensive co-creation for major organizational initiatives."
+      }
+    ],
+    "process": {
+      "title": "Discovery & Delivery",
+      "description": "I map history, current state, and vision ahead. Together we develop and clarify the heart of what you're building and the core narrative that should anchor our work. The result: incisive recommendations, identity clarity, KPI development, strategy roadmapping, and often the discovery of secondary opportunities in process, culture, and organizational design."
+    }
   },
-  "tagline": {
-    "text": "Come to us cloudy",
-    "description": "Our favorite projects & collaborators are often in foggy conditions with talented, ambitious leaders and could use a mirror, divining rod or a compass tune-up."
+  "offerings_special_projects": {
+    "hero": {
+      "title": "Special Projects",
+      "subtitle": "Bespoke co-creation for anything that matters"
+    },
+    "intro": "Free-form engagements for leaders building something major—campaign direction, launch strategy, creative ventures, and projects that don't fit traditional categories.",
+    "description": "Special Projects is where we work on what matters most to you, in whatever form that takes. This is for ambitious leaders who need a thought partner, strategist, and co-creator for something significant.",
+    "approach": {
+      "title": "Our Approach",
+      "content": "Bring your questions and your experiences, and we will go together, far, & fast."
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "title": "Portfolio",
+      "subtitle": "Select work and collaborations"
+    },
+    "intro": "Coming soon: Client work, case studies, and ventures.",
+    "clients": []
+  },
+  "contact": {
+    "hero": {
+      "title": "Let's Connect",
+      "subtitle": ""
+    },
+    "intro": "Ready to explore what's possible?",
+    "booking_text": "Currently booking engagements through 2027.",
+    "contact_instructions": "Email me at haley@thisislight.work with a bit about what you're navigating. If it seems like a good fit, I'll send you a calendar link.",
+    "email": "haley@thisislight.work"
   },
   "footer": {
-    "linkedin": "https://www.linkedin.com/in/haleymhoffman/",
-    "instagram": "https://www.instagram.com/haleymchung/",
-    "email": "haley@thisislight.work"
+    "ready_text": "Ready to explore what's possible?",
+    "cta_text": "Book an intro chat",
+    "cta_link": "/contact.html",
+    "sections": {
+      "connect": {
+        "title": "Connect",
+        "links": [
+          {"text": "Email", "url": "mailto:haley@thisislight.work"},
+          {"text": "LinkedIn", "url": "https://www.linkedin.com/in/haleymhoffman/"},
+          {"text": "Instagram", "url": "https://www.instagram.com/haleymchung/"}
+        ]
+      }
+    }
   }
 }

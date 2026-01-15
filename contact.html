@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect - Light Work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Light Work</a>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="/offerings/">Advising</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/offerings/individual.html">Individual</a></li>
+                        <li><a href="/offerings/enterprise.html">Enterprise</a></li>
+                        <li><a href="/offerings/special-projects.html">Special Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="/portfolio.html">Portfolio</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <h1 data-field="hero_title">Let's Connect</h1>
+        <p class="intro" data-field="intro">Ready to explore what's possible?</p>
+
+        <div class="divider"></div>
+
+        <!-- Contact Information -->
+        <section class="section">
+            <div class="section-content">
+                <h3 class="section-label">Booking</h3>
+                <div class="section-text">
+                    <p data-field="booking_text">Currently booking engagements through 2027.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- How to Connect -->
+        <section class="section">
+            <div class="section-content">
+                <h3 class="section-label">Get in Touch</h3>
+                <div class="section-text">
+                    <p data-field="contact_instructions">Email me at haley@thisislight.work with a bit about what you're navigating. If it seems like a good fit, I'll send you a calendar link.</p>
+
+                    <a href="mailto:haley@thisislight.work" class="cta-button" data-global="email" style="margin-top: 2rem;">Email Haley</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Social Links -->
+        <section class="section">
+            <div class="section-content">
+                <h3 class="section-label">Connect</h3>
+                <div class="section-text">
+                    <p style="margin-bottom: 1rem;">You can also find me on:</p>
+                    <a href="https://www.linkedin.com/in/haleymhoffman/" target="_blank" data-global="linkedin" style="display: block; margin-bottom: 0.5rem;">LinkedIn</a>
+                    <a href="https://www.instagram.com/haleymchung/" target="_blank" data-global="instagram" style="display: block;">Instagram</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <a href="mailto:haley@thisislight.work" data-global="email">Email</a>
+                <a href="https://www.linkedin.com/in/haleymhoffman/" target="_blank" data-global="linkedin">LinkedIn</a>
+                <a href="https://www.instagram.com/haleymchung/" target="_blank" data-global="instagram">Instagram</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Site</h4>
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/portfolio.html">Portfolio</a>
+                <a href="/contact.html">Connect</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Advising</h4>
+                <a href="/offerings/individual.html">Individual</a>
+                <a href="/offerings/enterprise.html">Enterprise</a>
+                <a href="/offerings/special-projects.html">Special Projects</a>
+            </div>
+        </div>
+
+        <div class="footer-brand" data-global="site_name">Light Work</div>
+    </footer>
+
+    <script src="/nav.js"></script>
+    <script src="/content-loader.js"></script>
+    <script>
+        // Load contact page content
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadPageContent('contact');
+
+            const response = await fetch('/content.json');
+            const data = await response.json();
+            const pageData = data.contact;
+
+            // Set content
+            document.querySelector('[data-field="hero_title"]').textContent = pageData.hero.title;
+            document.querySelector('[data-field="intro"]').textContent = pageData.intro;
+            document.querySelector('[data-field="booking_text"]').textContent = pageData.booking_text;
+            document.querySelector('[data-field="contact_instructions"]').textContent = pageData.contact_instructions;
+        });
+    </script>
+</body>
+</html>

@@ -77,16 +77,19 @@ html {
     position: relative;
 }
 
-.nav-menu a {
+.nav-menu a,
+.nav-dropdown > span {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: var(--text-light);
     text-decoration: none;
     transition: color 0.2s ease;
+    cursor: pointer;
 }
 
-.nav-menu a:hover {
+.nav-menu a:hover,
+.nav-dropdown:hover > span {
     color: var(--text-dark);
 }
 

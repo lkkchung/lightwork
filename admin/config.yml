@@ -6,89 +6,249 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "content"
+    label: "Content"
     files:
       - name: "home"
         label: "Home Page"
         file: "content.json"
         fields:
-          - label: "Hero Section"
-            name: "hero"
+          - label: "Home Page"
+            name: "home"
             widget: "object"
             fields:
-              - {label: "Title (Italic Part)", name: "title_italic", widget: "string", default: "This is"}
-              - {label: "Title (Regular Part)", name: "title_regular", widget: "string", default: "Light Work"}
-              - {label: "Intro Text", name: "intro", widget: "text"}
+              - label: "Hero Section"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "text"}
+                  - {label: "Intro", name: "intro", widget: "text"}
+                  - {label: "CTA Text", name: "cta_text", widget: "string"}
+                  - {label: "CTA Link", name: "cta_link", widget: "string"}
 
-          - label: "Approach Section"
-            name: "approach"
-            widget: "object"
-            fields:
-              - {label: "Content", name: "content", widget: "text"}
+              - label: "Audience Section"
+                name: "audience"
+                widget: "object"
+                fields:
+                  - {label: "Heading", name: "heading", widget: "string"}
+                  - {label: "Items", name: "items", widget: "list"}
+                  - {label: "Context", name: "context", widget: "text"}
 
-          - label: "Process Section"
-            name: "process"
+              - label: "Come Cloudy Section"
+                name: "come_cloudy"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+                  - {label: "Closing", name: "closing", widget: "string"}
+
+              - label: "Three Modes Section"
+                name: "modes"
+                widget: "object"
+                fields:
+                  - {label: "Heading", name: "heading", widget: "string"}
+                  - label: "Items"
+                    name: "items"
+                    widget: "list"
+                    fields:
+                      - {label: "Name", name: "name", widget: "string"}
+                      - {label: "Description", name: "description", widget: "text"}
+                      - {label: "Link", name: "link", widget: "string"}
+
+              - label: "About Preview"
+                name: "about_preview"
+                widget: "object"
+                fields:
+                  - {label: "Photo", name: "photo", widget: "string", required: false}
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Bio", name: "bio", widget: "text"}
+                  - {label: "Link Text", name: "link_text", widget: "string"}
+                  - {label: "Link", name: "link", widget: "string"}
+
+          - label: "About Page"
+            name: "about"
             widget: "object"
             fields:
-              - {label: "Main Text", name: "main_text", widget: "text"}
-              - {label: "Engagement Models (bulleted list)", name: "engagement_models", widget: "list"}
-              - {label: "Closing Text", name: "closing_text", widget: "text"}
-              - label: "Discovery Work"
-                name: "discovery"
+              - label: "Hero"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+
+              - label: "My Story"
+                name: "my_story"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Paragraphs", name: "paragraphs", widget: "list"}
+
+              - label: "How I Work"
+                name: "how_i_work"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Content", name: "content", widget: "text"}
+
+              - label: "Beloveds"
+                name: "beloveds"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Intro", name: "intro", widget: "text"}
+                  - label: "Links"
+                    name: "links"
+                    widget: "list"
+                    fields:
+                      - {label: "Title", name: "title", widget: "string"}
+                      - {label: "Description", name: "description", widget: "text"}
+                      - {label: "URL", name: "url", widget: "string"}
+                      - {label: "Category", name: "category", widget: "string", required: false}
+
+          - label: "Individual Advisory"
+            name: "offerings_individual"
+            widget: "object"
+            fields:
+              - label: "Hero"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "string"}
+
+              - {label: "Intro", name: "intro", widget: "text"}
+
+              - label: "Engagement Types"
+                name: "engagement_types"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+
+              - label: "Process"
+                name: "process"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+
+              - label: "Accessibility"
+                name: "accessibility"
                 widget: "object"
                 fields:
                   - {label: "Content", name: "content", widget: "text"}
-              - label: "Results"
-                name: "results"
+
+          - label: "Enterprise & Executive"
+            name: "offerings_enterprise"
+            widget: "object"
+            fields:
+              - label: "Hero"
+                name: "hero"
                 widget: "object"
                 fields:
-                  - {label: "Content", name: "content", widget: "text"}
-              - label: "Engagement Models Detail"
-                name: "engagement_detail"
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "string"}
+
+              - {label: "Intro", name: "intro", widget: "text"}
+
+              - label: "Engagement Types"
+                name: "engagement_types"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+
+              - label: "Process"
+                name: "process"
                 widget: "object"
                 fields:
-                  - {label: "Content", name: "content", widget: "text"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
 
-          - label: "Accessibility Section"
-            name: "accessibility"
+          - label: "Special Projects"
+            name: "offerings_special_projects"
             widget: "object"
             fields:
-              - {label: "Content", name: "content", widget: "text"}
+              - label: "Hero"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "string"}
 
-          - label: "Connect Section"
-            name: "connect"
-            widget: "object"
-            fields:
-              - {label: "Text", name: "text", widget: "string"}
-              - {label: "Email", name: "email", widget: "string"}
-              - {label: "Button Text", name: "button_text", widget: "string", default: "Connect with me!"}
-
-          - label: "About - My Story"
-            name: "my_story"
-            widget: "object"
-            fields:
-              - {label: "Paragraph 1", name: "para1", widget: "text"}
-              - {label: "Paragraph 2", name: "para2", widget: "text"}
-              - {label: "Paragraph 3", name: "para3", widget: "text"}
-
-          - label: "About - Working Style"
-            name: "working_style"
-            widget: "object"
-            fields:
-              - {label: "Content", name: "content", widget: "text"}
-
-          - label: "Tagline Section"
-            name: "tagline"
-            widget: "object"
-            fields:
-              - {label: "Tagline", name: "text", widget: "string", default: "Come to us cloudy"}
+              - {label: "Intro", name: "intro", widget: "text"}
               - {label: "Description", name: "description", widget: "text"}
+
+              - label: "Approach"
+                name: "approach"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Content", name: "content", widget: "text"}
+
+          - label: "Portfolio Page"
+            name: "portfolio"
+            widget: "object"
+            fields:
+              - label: "Hero"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "string"}
+
+              - {label: "Intro", name: "intro", widget: "text"}
+              - {label: "Clients", name: "clients", widget: "list", required: false}
+
+          - label: "Contact Page"
+            name: "contact"
+            widget: "object"
+            fields:
+              - label: "Hero"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+
+              - {label: "Intro", name: "intro", widget: "text"}
+              - {label: "Booking Text", name: "booking_text", widget: "text"}
+              - {label: "Contact Instructions", name: "contact_instructions", widget: "text"}
+              - {label: "Email", name: "email", widget: "string"}
+
+          - label: "Global Settings"
+            name: "global"
+            widget: "object"
+            fields:
+              - {label: "Site Name", name: "site_name", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - label: "Social Media"
+                name: "social"
+                widget: "object"
+                fields:
+                  - {label: "LinkedIn URL", name: "linkedin", widget: "string"}
+                  - {label: "Instagram URL", name: "instagram", widget: "string"}
 
           - label: "Footer"
             name: "footer"
             widget: "object"
             fields:
-              - {label: "LinkedIn URL", name: "linkedin", widget: "string"}
-              - {label: "Instagram URL", name: "instagram", widget: "string"}
-              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Ready Text", name: "ready_text", widget: "string"}
+              - {label: "CTA Text", name: "cta_text", widget: "string"}
+              - {label: "CTA Link", name: "cta_link", widget: "string"}
+              - label: "Sections"
+                name: "sections"
+                widget: "object"
+                fields:
+                  - label: "Connect Section"
+                    name: "connect"
+                    widget: "object"
+                    fields:
+                      - {label: "Title", name: "title", widget: "string"}
+                      - label: "Links"
+                        name: "links"
+                        widget: "list"
+                        fields:
+                          - {label: "Text", name: "text", widget: "string"}
+                          - {label: "URL", name: "url", widget: "string"}
